@@ -1,11 +1,12 @@
-import React from 'react'
+import HomeHeader from "@/components/HomeHeader";
+import React from "react";
 
 function Home() {
   return (
-    <div className='text-green-500'>
-      home page
-    </div>
-  )
+    <>
+      <HomeHeader />
+    </>
+  );
 }
 
-export default Home
+export default Home;

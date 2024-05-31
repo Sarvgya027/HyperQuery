@@ -30,7 +30,7 @@ function HomeSearch() {
   return (
     <>
       <div className="w-full sm:w-[50%] relative">
-        <div className="absolute -top-5 -inset-0 bg-gradient-to-r from-[#14a6ab] to-[#947d37] rounded-full blur-[100px] opacity-70"></div>
+        <div className="absolute -top-5 -inset-0 bg-gradient-to-r from-[#14a6ab] to-[#947d37] rounded-full blur-[100px] opacity-50"></div>
         <form onSubmit={handleSubmit} className="flex w-full mx-auto max-w-[90%] border border-gray-200 px-4 py-2 sm:px-5 sm:py-3 rounded-xl hover:shadow-gray-400 focus-within:shadow-md transition-shadow relative z-10">
           <CiSearch className="text-[#CBE4DE] w-6 h-6 sm:w-8 sm:h-6 mr-2 sm:mr-3" />
           <input

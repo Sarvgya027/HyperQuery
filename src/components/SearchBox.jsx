@@ -15,14 +15,14 @@ function SearchBox() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!term.trim)
+    if(!term.trim()) return;
     router.push(`/search/web?searchTerm=${term}`)
   }
 
   return (
     <div className="relative">
       <div className="absolute inset-1 bg-gray-600 bg-gradient-to-r from-[#14a6ab] to-[#947d37] blur-[100px] opacity-80 rounded-md z-0"></div>
-      <form onSubmit={handleSubmit} className="flex border border-gray-300 rounded-xl shadow-lg px-4 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center z-10 hover:shadow-gray-400 focus-within:shadow-md transition-shadow">
+      <form onSubmit={handleSubmit} className="flex border border-gray-300 rounded-xl shadow-lg px-4 py-1 ml-10 mr-5 flex-grow max-w-3xl items-center z-10 hover:shadow-gray-400 focus-within:shadow-md transition-shadow">
         <input
           type="text"
           value={term}

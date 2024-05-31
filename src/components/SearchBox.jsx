@@ -21,7 +21,7 @@ function SearchBox() {
 
   return (
     <div className="relative">
-      <div className="absolute inset-1 bg-gray-600 bg-gradient-to-r from-[#14a6ab] to-[#947d37] blur-[100px] opacity-80 rounded-md z-0"></div>
+      <div className="absolute inset-1 bg-gray-600 bg-gradient-to-r from-[#14a6ab] to-[#947d37] blur-[80px] opacity-100 rounded-md z-0"></div>
       <form onSubmit={handleSubmit} className="flex border border-gray-300 rounded-xl shadow-lg px-4 py-1 ml-10 mr-5 flex-grow max-w-3xl items-center z-10 hover:shadow-gray-400 focus-within:shadow-md transition-shadow">
         <input
           type="text"
@@ -40,3 +40,5 @@ function SearchBox() {
 }
 
 export default SearchBox
+
+

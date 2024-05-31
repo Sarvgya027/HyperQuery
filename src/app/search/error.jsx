@@ -8,7 +8,7 @@ function Error({error, reset}) {
   }, [error])
   return (
     <div className='flex flex-col justify-center items-center pt-10'>
-      <h1 className='text-3xl mb-4'>Something went wrong...</h1>
+      <h1 className='text-3xl text-[#CBE4DE]  mb-4'>Something went wrong...</h1>
       <button className='text-[#16C3C8]'>Try again</button>
     </div>
   )

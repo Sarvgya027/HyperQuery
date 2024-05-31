@@ -33,7 +33,7 @@ import CountryLookup from './CountryLookup'
 
 function Footer() {
   return (
-    <footer className='fixed bottom-0 left-0 right-0 bg-transparent flex flex-col'>
+    <footer className='fixed bottom-0 left-0 right-0 bg-[#2C3333] flex flex-col'>
       <div className='border-b border-gray-700 px-4 py-2'>
         <CountryLookup />
       </div>

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Error from "../error";
+import WebSearchResults from "@/components/WebSearchResults";
 
 export default async function WebSearchPage({searchParams}) {
   try {
@@ -22,19 +24,13 @@ export default async function WebSearchPage({searchParams}) {
     }
     return (
       <div>
-        {results && results.length > 0 ? (
-          results.map((result, index) => (
-            <div key={index}>
-              <h1>{result.title}</h1>
-            </div>
-          ))
-        ) : (
-          <p>No results found.</p>
-        )}
+        {results && <WebSearchResults results={data} />}
       </div>
     );
   } catch (error) {
     console.error('Error fetching data:', error);
-    return <div>Error loading data</div>;
+    return <div>
+      <Error />
+    </div>;
   }
 }

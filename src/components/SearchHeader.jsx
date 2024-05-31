@@ -11,7 +11,7 @@ const nunito = Nunito({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-});
+}); 
 
 function SearchHeader() {
   return (
@@ -36,3 +36,4 @@ function SearchHeader() {
 }
 
 export default SearchHeader 
+

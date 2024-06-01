@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
+import PaginationButtons from './PaginationButtons'
 
 function ImageSerchResults({results}) {
   return (
-    <div className='pb-10 mt-2'>
+    <div className='sm:pb-10 pb-16 mt-4'>
       <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-2 space-x-2 '>
         {results.items.map((result) => (
           <div className='mb-2' key={result.link}>
@@ -21,6 +22,10 @@ function ImageSerchResults({results}) {
             </div>
           </div>
         ))}
+      </div>
+      <div className='ml-16'>
+
+      <PaginationButtons />
       </div>
     </div>
   )
